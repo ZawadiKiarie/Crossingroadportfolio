@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const REFERENCE_WIDTH = 414;
-const MOBILE_THRESHOLD = 990;
+const MOBILE_THRESHOLD = 1024;
 
 export const useMobile = () => {
   const [scaleFactor, setScaleFactor] = useState(
