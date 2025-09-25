@@ -19,8 +19,8 @@ export const LoadingScreen = () => {
         </div>
         <div className="instructions__container">
           <div className="instructions">
-            Use Up, Down, Left, Right Keys(or W, A, S, D keys) to navigate the
-            scene{" "}
+            Use Up, Down, Left, Right Keys (or W, A, S, D keys) to navigate the
+            scene
           </div>
           <button className="button-entry" onClick={() => setHidden(true)}>
             Understood. Let me in!
