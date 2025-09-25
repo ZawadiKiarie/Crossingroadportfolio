@@ -1,6 +1,6 @@
 # Crossing road portfolio
 
-![Portfolio picture](portfoliopic.png)
+![Portfolio picture](public/portfoliopic.png)
 
 This is a fun portfolio that allows you to walk through a park and check out some of the projects i have done.
 
