@@ -19,11 +19,11 @@ import { Capsule } from "three/examples/jsm/Addons.js";
 
 const OFFSET = Math.PI / 2;
 
-const GRAVITY = 30;
+const GRAVITY = 70;
 const CAPSULE_RADIUS = 0.35;
 const CAPSULE_HEIGHT = 1;
-const JUMP_HEIGHT = 7;
-const MOVE_SPEED = 5;
+const JUMP_HEIGHT = 20;
+const MOVE_SPEED = 8;
 
 export function PortfolioModel(props) {
   const { nodes, materials } = useGLTF("/models/Portfolio3.glb");
@@ -176,7 +176,7 @@ export function PortfolioModel(props) {
 
     //step
     playerCollider.translate(
-      playerVelocity.current.clone().multiplyScalar(0.035)
+      playerVelocity.current.clone().multiplyScalar(delta)
     );
 
     //collide & slide
