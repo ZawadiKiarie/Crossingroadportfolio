@@ -19,10 +19,10 @@ import { Capsule } from "three/examples/jsm/Addons.js";
 
 const OFFSET = Math.PI / 2;
 
-const GRAVITY = 40;
+const GRAVITY = 80;
 const CAPSULE_RADIUS = 0.35;
 const CAPSULE_HEIGHT = 1;
-const JUMP_HEIGHT = 7;
+const JUMP_HEIGHT = 15;
 const MOVE_SPEED = 7;
 
 export function PortfolioModel(props) {
@@ -204,6 +204,7 @@ export function PortfolioModel(props) {
 
   useFrame((_, delta) => {
     updatePlayer(delta);
+    console.log(delta);
 
     if (character.current && camera) {
       const targetCameraPosition = new THREE.Vector3(
