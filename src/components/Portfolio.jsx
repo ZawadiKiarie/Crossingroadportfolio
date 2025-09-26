@@ -19,7 +19,7 @@ import { Capsule } from "three/examples/jsm/Addons.js";
 
 const OFFSET = Math.PI / 2;
 
-const GRAVITY = 90;
+const GRAVITY = 80;
 const CAPSULE_RADIUS = 0.35;
 const CAPSULE_HEIGHT = 1;
 const JUMP_HEIGHT = 15;
@@ -176,7 +176,7 @@ export function PortfolioModel(props) {
 
     //step
     playerCollider.translate(
-      playerVelocity.current.clone().multiplyScalar(delta)
+      playerVelocity.current.clone().multiplyScalar(0.035)
     );
 
     //collide & slide
