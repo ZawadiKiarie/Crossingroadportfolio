@@ -176,7 +176,7 @@ export function PortfolioModel(props) {
 
     //step
     playerCollider.translate(
-      playerVelocity.current.clone().multiplyScalar(delta)
+      playerVelocity.current.clone().multiplyScalar(0.035)
     );
 
     //collide & slide
