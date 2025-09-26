@@ -19,7 +19,7 @@ import { Capsule } from "three/examples/jsm/Addons.js";
 
 const OFFSET = Math.PI / 2;
 
-const GRAVITY = 80;
+const GRAVITY = 100;
 const CAPSULE_RADIUS = 0.35;
 const CAPSULE_HEIGHT = 1;
 const JUMP_HEIGHT = 15;
