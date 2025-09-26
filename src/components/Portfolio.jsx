@@ -22,7 +22,7 @@ const OFFSET = Math.PI / 2;
 const GRAVITY = 100;
 const CAPSULE_RADIUS = 0.35;
 const CAPSULE_HEIGHT = 1;
-const JUMP_HEIGHT = 15;
+const JUMP_HEIGHT = 17;
 const MOVE_SPEED = 7;
 
 export function PortfolioModel(props) {
