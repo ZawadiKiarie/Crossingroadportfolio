@@ -19,11 +19,11 @@ import { Capsule } from "three/examples/jsm/Addons.js";
 
 const OFFSET = Math.PI / 2;
 
-const GRAVITY = 70;
+const GRAVITY = 30;
 const CAPSULE_RADIUS = 0.35;
 const CAPSULE_HEIGHT = 1;
-const JUMP_HEIGHT = 20;
-const MOVE_SPEED = 8;
+const JUMP_HEIGHT = 7;
+const MOVE_SPEED = 7;
 
 export function PortfolioModel(props) {
   const { nodes, materials } = useGLTF("/models/Portfolio3.glb");
