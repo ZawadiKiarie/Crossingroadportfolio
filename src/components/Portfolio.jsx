@@ -22,7 +22,7 @@ const OFFSET = Math.PI / 2;
 const GRAVITY = 30;
 const CAPSULE_RADIUS = 0.35;
 const CAPSULE_HEIGHT = 1;
-const JUMP_HEIGHT = 15;
+const JUMP_HEIGHT = 7;
 const MOVE_SPEED = 5;
 
 export function PortfolioModel(props) {
@@ -161,7 +161,7 @@ export function PortfolioModel(props) {
     }
   };
 
-  const updatePlayer = () => {
+  const updatePlayer = (delta) => {
     if (!character.current) return;
 
     if (character.current.position.y < -20) {
@@ -171,7 +171,7 @@ export function PortfolioModel(props) {
 
     //gravity
     if (!playerOnFloor.current) {
-      playerVelocity.current.y -= GRAVITY * 0.035;
+      playerVelocity.current.y -= GRAVITY * delta;
     }
 
     //step
@@ -202,8 +202,8 @@ export function PortfolioModel(props) {
     );
   };
 
-  useFrame(() => {
-    updatePlayer();
+  useFrame((_, delta) => {
+    updatePlayer(delta);
 
     if (character.current && camera) {
       const targetCameraPosition = new THREE.Vector3(
